@@ -2,13 +2,13 @@
 //ADD YOUR FIREBASE LINKS HERE
 
 const firebaseConfig = {
-      apiKey: "AIzaSyAG3e4DL_Oxs8oLVHo5Iv2S8IGlOOs6Lyk",
-      authDomain: "kwitter-86da4.firebaseapp.com",
-      databaseURL: "https://kwitter-86da4-default-rtdb.firebaseio.com",
-      projectId: "kwitter-86da4",
-      storageBucket: "kwitter-86da4.appspot.com",
-      messagingSenderId: "1055374187549",
-      appId: "1:1055374187549:web:61b5ad56f6dd3182e53af4"
+      apiKey: "AIzaSyDl_bj3ZgGP3SbJz6b0ULWQyKW2UWcQuRY",
+      authDomain: "kwitter2-9de20.firebaseapp.com",
+      databaseURL: "https://kwitter2-9de20-default-rtdb.firebaseio.com",
+      projectId: "kwitter2-9de20",
+      storageBucket: "kwitter2-9de20.appspot.com",
+      messagingSenderId: "94812064713",
+      appId: "1:94812064713:web:1f7f791b477e241dc67618"
     };
     
     // Initialize Firebase
@@ -45,4 +45,9 @@ function redirectToRoomName(name){
       window.location= "kwitter_page.html" ;
 }
 
+function logout(){
+      localStorage.removeItem("user_name");
+      localStorage.removeItem("room_name");
+      window.location= "index.html"
+}
 
